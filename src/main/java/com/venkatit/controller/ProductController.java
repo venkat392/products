@@ -20,6 +20,8 @@ public class ProductController {
 	@GetMapping(value = "/product",produces = "application/json")  
 	public List<ProductEntity> getProduct()   
 	{  
+		
+		System.out.println("hi");
 	//finds all the products  
 	List<ProductEntity> products = productService.findAll();  
 	//returns the product list  
